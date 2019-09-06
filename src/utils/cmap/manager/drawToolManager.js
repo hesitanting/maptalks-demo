@@ -67,12 +67,13 @@ class drawToolManager {
                 textWeight: 600,
                 textDx: 40,
                 textDy: 3,
-                markerFile: 'image/drag.png',
+                markerFile: this.commomApi.getCommonImg('drag'),
                 markerWidth: 27,
                 markerHeight: 12,
                 markerDy: 5
             }
         }).addTo(layer);
+        this.layerApi.layerToExtent(map, layerid);
         //标注添加拖动事件
         dragMarker.on('dragging', e => {
             let coord1 = e.target.getCoordinates();
@@ -86,7 +87,7 @@ class drawToolManager {
         })
         //拖动结束事件
         dragMarker.on('dragend', e => {
-            this.layerApi.layerToExtent(layerid)
+            this.layerApi.layerToExtent(map, layerid);
             finishCall({
                 centerCoord: coord, //中心点
                 radius: radius, //半径

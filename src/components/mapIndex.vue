@@ -94,9 +94,12 @@ export default {
       // this.$mapapi.drawTool.drawToolsInit("point", "drawToolLayer", data => {});
       this.$mapapi.contextMenu.createNavMenu(data => {
         this.routeResult = data;
-        $('.routeInfo').animate({
-          left: 20
-        }, 500)
+        $(".routeInfo").animate(
+          {
+            left: 20
+          },
+          500
+        );
         this.resize();
       });
     });
@@ -158,13 +161,16 @@ export default {
         $(".timeCon").css("max-height", $(".routeInfo").height() - 20);
       }, 500);
     },
-    evtBind(){
-      $('.infoclose').bind('click',e=>{
-        $('.routeInfo').animate({
-          left: -450
-        }, 500)
-        this.$mapapi.layer.clearRouteLayer()
-      })
+    evtBind() {
+      $(".infoclose").bind("click", e => {
+        $(".routeInfo").animate(
+          {
+            left: -450
+          },
+          500
+        );
+        this.$mapapi.layer.clearRouteLayer();
+      });
     }
   }
 };

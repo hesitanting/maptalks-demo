@@ -45,7 +45,7 @@ class LayerManager {
             return null;
         }
         if (!layerid) {
-            console.log('layerManager--The map is necessary')
+            console.log('layerManager--The layerid is necessary')
             return null;
         }
         //查找图层，不存在则创建
