@@ -1,0 +1,59 @@
+.contextMenu {
+    // position: absolute;
+    // left: 400px;
+    // top: 300px;
+    // z-index: 11;
+    height: 240px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .29);
+    width: 162px;
+
+    .context_menu {
+        width: 162px;
+        padding: 9px 0;
+        float: left;
+        overflow: hidden;
+
+        li {
+            padding: 0 13px;
+            width: 100%;
+            height: 34px;
+            line-height: 34px;
+            cursor: pointer;
+            font-size: 14px;
+            text-align: left;
+
+            span {
+                display: inline-block;
+                padding-left: 12px;
+            }
+        }
+
+        li:hover {
+            background-color: rgba(246, 246, 246, 0.8);
+        }
+
+        .menu-icon {
+            vertical-align: middle;
+            margin-top: -4px;
+            background: url(../public/image/icon_dir.png) no-repeat;
+            background-size: 281px 219px;
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+        }
+
+        .menu-icon-from {
+            background-position: -95px -39px;
+        }
+
+        .menu-icon-via {
+            background-position: -126px -39px;
+        }
+
+        .menu-icon-to {
+            background-position: -158px -39px;
+        }
+    }
+}
