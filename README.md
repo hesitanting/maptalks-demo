@@ -1,5 +1,5 @@
 # maptalks-demo
-基于maptalks的地图功能展示，对地图相关功能的插件封装
+基于[maptalks](https://maptalks.org/)的地图功能展示
 ## Project setup
 ```
 npm install
